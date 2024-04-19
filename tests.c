@@ -20,6 +20,7 @@ int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_toupper(int c);
+int	ft_tolower(int c);
 
 void	ft_islower_test()
 {
@@ -105,6 +106,20 @@ void	ft_toupper_test()
 	}
 }
 
+void	ft_tolower_test()
+{
+	int	i = -10;
+
+	while (i < 300)
+	{
+		int	ft_result = ft_tolower(i);
+		int	result = tolower(i);
+		if (ft_result != result)
+			printf("For the value %d (char %c) ft_tolower gives %c and standard function %c\n", i, (char) i, (char) ft_result, (char) result);
+		i++;
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -113,6 +128,7 @@ int	main()
 	ft_isdigit_test();
 	ft_isalnum_test();
 	ft_toupper_test();
+	ft_tolower_test();
 	printf("All tests done.\n");
 	return (0);
 }
