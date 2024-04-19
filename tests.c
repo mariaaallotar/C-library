@@ -12,12 +12,14 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <xlocale.h>
 
 int	ft_islower(int c);
 int	ft_isupper(int c);
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
+int	ft_toupper(int c);
 
 void	ft_islower_test()
 {
@@ -89,6 +91,20 @@ void	ft_isalnum_test()
 	}
 }
 
+void	ft_toupper_test()
+{
+	int	i = -10;
+
+	while (i < 300)
+	{
+		int	ft_result = ft_toupper(i);
+		int	result = toupper(i);
+		if (ft_result != result)
+			printf("For the value %d (char %c) ft_toupper gives %c and standard function %c\n", i, (char) i, (char) ft_result, (char) result);
+		i++;
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -96,6 +112,7 @@ int	main()
 	ft_isalpha_test();
 	ft_isdigit_test();
 	ft_isalnum_test();
+	ft_toupper_test();
 	printf("All tests done.\n");
 	return (0);
 }
