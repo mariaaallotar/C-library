@@ -16,6 +16,7 @@
 int	ft_islower(int c);
 int	ft_isupper(int c);
 int	ft_isalpha(int c);
+int	ft_isdigit(int c);
 
 void	ft_islower_test()
 {
@@ -59,11 +60,26 @@ void	ft_isalpha_test()
 	}
 }
 
+void	ft_isdigit_test()
+{
+	int	i = -10;
+
+	while (i < 300)
+	{
+		if (ft_isdigit(i) == 0 && isdigit(i) != 0)
+			printf("For the value %d (char %c) ft_isdigit gives 0 and standard function non-zero\n", i, (char) i);
+		else if (ft_isdigit(i) != 0 && isdigit(i) == 0)
+			printf("For the value %d (char %c) ft_isdigit gives non-zero and standard function 0\n", i, (char) i);
+		i++;
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
 	ft_isupper_test();
 	ft_isalpha_test();
+	ft_isdigit_test();
 	printf("All tests done.\n");
 	return (0);
 }
