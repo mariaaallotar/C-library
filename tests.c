@@ -124,6 +124,20 @@ void	ft_isascii_test()
 	}
 }
 
+void	ft_isprint_test()
+{
+	int	i = -10;
+
+	while (i < 300)
+	{
+		if (ft_isprint(i) == 0 && isprint(i) != 0)
+			printf("For the value %d (char %c) ft_isprint gives 0 and standard function non-zero\n", i, (char) i);
+		else if (ft_isprint(i) != 0 && isprint(i) == 0)
+			printf("For the value %d (char %c) ft_isprint gives non-zero and standard function 0\n", i, (char) i);
+		i++;
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -134,6 +148,7 @@ int	main()
 	ft_toupper_test();
 	ft_tolower_test();
 	ft_isascii_test();
+	ft_isprint_test();
 	printf("All tests done.\n");
 	return (0);
 }
