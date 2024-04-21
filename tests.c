@@ -117,7 +117,7 @@ void	ft_isascii_test()
 	while (i < 300)
 	{
 		if (ft_isascii(i) == 0 && isascii(i) != 0)
-			printf("For the value %d (char %c) ft_isasii gives 0 and standard function non-zero\n", i, (char) i);
+			printf("For the value %d (char %c) ft_isascii gives 0 and standard function non-zero\n", i, (char) i);
 		else if (ft_isascii(i) != 0 && isascii(i) == 0)
 			printf("For the value %d (char %c) ft_isascii gives non-zero and standard function 0\n", i, (char) i);
 		i++;
