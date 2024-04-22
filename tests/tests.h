@@ -18,6 +18,9 @@
 # include <xlocale.h>
 # include <strings.h>
 
+void	ft_islower_test();
+void	ft_isupper_test();
+
 int		ft_islower(int c);
 int		ft_isupper(int c);
 int		ft_isalpha(int c);

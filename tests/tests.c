@@ -12,34 +12,6 @@
 
 #include "tests.h"
 
-void	ft_islower_test()
-{
-	int	i = -10;
-
-	while (i < 300)
-	{
-		if (ft_islower(i) == 0 && islower(i) != 0)
-			printf("For the value %d (char %c) ft_islower gives 0 and standard function non-zero\n", i, (char) i);
-		else if (ft_islower(i) != 0 && islower(i) == 0)
-			printf("For the value %d (char %c) ft_islower gives non-zero and standard function 0\n", i, (char) i);
-		i++;
-	}
-}
-
-void	ft_isupper_test()
-{
-	int	i = -10;
-
-	while (i < 300)
-	{
-		if (ft_isupper(i) == 0 && isupper(i) != 0)
-			printf("For the value %d (char %c) ft_isupper gives 0 and standard function non-zero\n", i, (char) i);
-		else if (ft_isupper(i) != 0 && isupper(i) == 0)
-			printf("For the value %d (char %c) ft_isupper gives non-zero and standard function 0\n", i, (char) i);
-		i++;
-	}
-}
-
 void	ft_isalpha_test()
 {
 	int	i = -10;
@@ -210,8 +182,6 @@ void	ft_strlen_test()
 
 void	ft_memcpy_test()
 {
-	//void *ft_memcpy(void *dst, const void *src, size_t n)
-
 	char ft_src[] = "hello";
 	char ft_dst[] = "hihihi";
 	void *ft_result = ft_memcpy((void *) ft_dst, (const void *) ft_src, 3);

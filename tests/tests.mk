@@ -1,10 +1,10 @@
 
-SRCS = tests.c \
+SRCS = tests/tests.c \
 		ft_isalnum.c \
         ft_isalpha.c \
         ft_isdigit.c \
-        ft_islower.c \
-        ft_isupper.c \
+        ft_islower.c tests/ft_islower_test.c\
+        ft_isupper.c tests/ft_isupper_test.c\
         ft_tolower.c \
         ft_toupper.c \
 		ft_isascii.c \
