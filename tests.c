@@ -185,6 +185,29 @@ void	ft_memset_test()
 	}
 }
 
+void	ft_strlen_test()
+{
+	const char *s = "abcdef";
+
+	size_t ft_result = ft_strlen(s);
+	size_t result = strlen(s);
+
+	if (ft_result != result)
+	{
+		printf("For the string %s ft_strlen gives %d and the standard function gives %d\n", s, (int) ft_result, (int) result);
+	}
+
+	const char *t = "";
+
+	ft_result = ft_strlen(t);
+	result = strlen(t);
+
+	if (ft_result != result)
+	{
+		printf("For the string %s ft_strlen gives %d and the standard function gives %d\n", t, (int) ft_result, (int) result);
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -198,6 +221,7 @@ int	main()
 	ft_isprint_test();
 	ft_bzero_test();
 	ft_memset_test();
+	ft_strlen_test();
 	printf("All tests done.\n");
 	return (0);
 }
