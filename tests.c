@@ -208,6 +208,24 @@ void	ft_strlen_test()
 	}
 }
 
+void	ft_memcpy_test()
+{
+	//void *ft_memcpy(void *dst, const void *src, size_t n)
+
+	char ft_src[] = "hello";
+	char ft_dst[] = "hihihi";
+	void *ft_result = ft_memcpy((void *) ft_dst, (const void *) ft_src, 3);
+
+	char src[] = "hello";
+	char dst[] = "hihihi";
+	void *result = memcpy((void *) dst, (const void *) src, 3);
+
+	if (strcmp((const char *) ft_result, (const char *) result) != 0)
+	{
+		printf("Ft_strlen gives %s and the standard function gives %s\n", (char *) ft_result, (char *) result);
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -222,6 +240,7 @@ int	main()
 	ft_bzero_test();
 	ft_memset_test();
 	ft_strlen_test();
+	ft_memcpy_test();
 	printf("All tests done.\n");
 	return (0);
 }

@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/22 14:27:50 by maheleni          #+#    #+#             */
+/*   Updated: 2024/04/22 14:27:52 by maheleni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+void *ft_memcpy(void *dst, const void *src, size_t n)
+{
+	void *orig_dst;
+
+	orig_dst = dst;
+	while (n > 0)
+	{
+		*(char *)dst = *(char *)src;
+		dst++;
+		src++;
+		n--;
+	}
+	return (orig_dst);
+}
