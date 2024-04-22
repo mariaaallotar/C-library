@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/19 12:48:23 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/19 12:48:25 by maheleni         ###   ########.fr       */
+/*   Created: 2024/04/22 08:57:43 by maheleni          #+#    #+#             */
+/*   Updated: 2024/04/22 08:57:45 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#include <stdio.h>
 
-# include <stdio.h>
-# include <ctype.h>
-# include <xlocale.h>
-# include <strings.h>
-
-int	ft_islower(int c);
-int	ft_isupper(int c);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_toupper(int c);
-int	ft_tolower(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t len);
 
-#endif
+/**
+* Writes n zeroed bytes ('\0') to the string s
+* Parameters: 
+	*s - string to write zeroed bytes to
+	n - amount of bytes to write
+*/
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset(s, '\0', n);
+}

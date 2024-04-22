@@ -138,6 +138,53 @@ void	ft_isprint_test()
 	}
 }
 
+void	ft_bzero_test()
+{
+	char ft_s[] = "abcdef";
+	char s[] = "abcdef";
+	size_t n = 3;
+
+	ft_bzero((void *)ft_s, n);
+	bzero((void *)s, n);
+	int i = 0;
+	while (i < 6)
+	{
+		if (ft_s[i] == '\0' && s[i] == 0)
+		{	i++;
+			continue;
+		}
+		if (ft_s[i] == '\0')
+		{
+			printf("For the index %d, ft_bzero has a zeroed byte but the standard function %c", i, s[i]);
+		}
+		if (s[i] == '\0')
+		{
+			printf("For the index %d, ft_bzero has %c but the standard function a zeroed byte", i, ft_s[i]);
+		}
+		i++;
+	}
+}
+
+void	ft_memset_test()
+{
+	char ft_str[] = "abcdef";
+	char str[] = "abcdef";
+	int c = 'h';
+	size_t len = 3;
+
+	char *ft_result = (char *) ft_memset((void *)ft_str, c, len);
+	char *result = (char *) memset((void *) str, c, len);
+	int i = 0;
+	while (i < 6)
+	{
+		if (ft_result[i] != result[i])
+		{
+			printf("For the index %d, ft_memset has the character %c but the standard function the character %c\n", i, ft_result[i], result[i]);
+		}
+		i++;
+	}
+}
+
 int	main()
 {
 	ft_islower_test();
@@ -149,6 +196,8 @@ int	main()
 	ft_tolower_test();
 	ft_isascii_test();
 	ft_isprint_test();
+	ft_bzero_test();
+	ft_memset_test();
 	printf("All tests done.\n");
 	return (0);
 }
