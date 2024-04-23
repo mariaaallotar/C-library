@@ -12,7 +12,8 @@ SRCS = tests/tests.c \
 		ft_bzero.c \
 		ft_memset.c \
 		ft_strlen.c \
-		ft_memcpy.c
+		ft_memcpy.c \
+		ft_memmove.c tests/ft_memmove_test.c
 
 CC = cc -g -o testprog
 

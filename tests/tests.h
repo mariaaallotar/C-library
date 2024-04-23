@@ -17,9 +17,11 @@
 # include <ctype.h>
 # include <xlocale.h>
 # include <strings.h>
+# include <stdlib.h>
 
 void	ft_islower_test();
 void	ft_isupper_test();
+void	ft_memmove_test();
 
 int		ft_islower(int c);
 int		ft_isupper(int c);
@@ -34,5 +36,6 @@ size_t	ft_strlen(const char *s);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t n);
 
 #endif

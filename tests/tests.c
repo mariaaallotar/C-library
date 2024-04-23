@@ -211,6 +211,7 @@ int	main()
 	ft_memset_test();
 	ft_strlen_test();
 	ft_memcpy_test();
+	ft_memmove_test();
 	printf("All tests done.\n");
 	return (0);
 }
