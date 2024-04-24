@@ -22,9 +22,9 @@
 * Returns: 
 	The destination
 */
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	void *orig_dst;
+	void	*orig_dst;
 
 	orig_dst = dst;
 	while (n > 0)
