@@ -212,6 +212,7 @@ int	main()
 	ft_strlen_test();
 	ft_memcpy_test();
 	ft_memmove_test();
+	ft_strlcpy_test();
 	printf("All tests done.\n");
 	return (0);
 }
