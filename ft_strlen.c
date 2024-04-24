@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+# include "libft.h"
 
 /**
 * Computes the length of the string s

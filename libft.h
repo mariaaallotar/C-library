@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 08:57:43 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/22 08:57:45 by maheleni         ###   ########.fr       */
+/*   Created: 2024/04/24 12:52:38 by maheleni          #+#    #+#             */
+/*   Updated: 2024/04/24 12:52:40 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-/**
-* Writes n zeroed bytes ('\0') to the string s
-* Parameters: 
-	*s - string to write zeroed bytes to
-	n - amount of bytes to write
-*/
-void	ft_bzero(void *s, size_t n)
-{
-	ft_memset(s, '\0', n);
-}
+# include <stdio.h>
+
+void	*ft_memset(void *s, int c, size_t len);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_islower(int c);
+int	ft_isupper(int c);
+size_t	ft_strlen(const char *s);
+
+#endif

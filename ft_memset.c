@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+# include "libft.h"
 
 /**
 * Writes len bytes of value c (converted to an unsigned char) to the string s

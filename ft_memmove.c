@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+# include "libft.h"
 
 /**
 * Copies n bytes from memory area src to memory area dst

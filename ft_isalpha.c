@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_islower(int c);
-int	ft_isupper(int c);
+# include "libft.h"
 
 /**
 * Determines if a character is a letter (alphabetic character)

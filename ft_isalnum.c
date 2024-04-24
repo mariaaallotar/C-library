@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
+# include "libft.h"
 
 /**
 * Determines if a character is an alphanumeric character (either a letter

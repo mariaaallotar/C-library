@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isupper(int c);
+# include "libft.h"
 
 /**
 * Converts an upper-case letter to the corresponding lower-case letter
