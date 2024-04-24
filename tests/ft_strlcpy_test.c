@@ -1,7 +1,7 @@
 
 #include "tests.h"
 
-static void	dst_size_0()
+static void	dstsize_0()
 {
 	char dst[10] = "initial";
 	const char *src = "source";
@@ -11,7 +11,20 @@ static void	dst_size_0()
 	printf("Expected return value: %zu\n", ret_str);
 	printf("Actual return value: %zu\n", ret_ft);
 	printf("Expected destination string: initial\n");
-	printf("Actual destination string: %s\n", dst);
+	printf("Actual destination string: %s\n\n", dst);
+}
+
+static void	dst_size_0()
+{
+	char dst[] = "";
+	const char *src = "source";
+	size_t ret_ft = ft_strlcpy(dst, src, 0);
+	size_t ret_str = strlcpy(dst, src, 0);
+	printf("Test: destination 0\n");
+	printf("Expected return value: %zu\n", ret_str);
+	printf("Actual return value: %zu\n", ret_ft);
+	printf("Expected destination string: initial\n");
+	printf("Actual destination string: %s\n\n", dst);
 }
 
 static void	dst_size_1()
@@ -24,7 +37,7 @@ static void	dst_size_1()
 	printf("Expected return value: %zu\n", ret_str);
 	printf("Actual return value: %zu\n", ret_ft);
 	printf("Expected destination string: \n");
-	printf("Actual destination string: %s\n", dst);
+	printf("Actual destination string: %s\n\n", dst);
 }
 
 static void	dst_bigger_than_src()
@@ -37,7 +50,7 @@ static void	dst_bigger_than_src()
 	printf("Expected return value: %zu\n", ret_str);
 	printf("Actual return value: %zu\n", ret_ft);
 	printf("Expected destination string: source\n");
-	printf("Actual destination string: %s\n", dst);
+	printf("Actual destination string: %s\n\n", dst);
 }
 
 static void	dst_smaller_than_src()
@@ -50,7 +63,7 @@ static void	dst_smaller_than_src()
 	printf("Expected return value: %zu\n", ret_str);
 	printf("Actual return value: %zu\n", ret_ft);
 	printf("Expected destination string: sour\n");
-	printf("Actual destination string: %s\n", dst);
+	printf("Actual destination string: %s\n\n", dst);
 }
 
 static void	src_not_null_terminated()
@@ -63,11 +76,12 @@ static void	src_not_null_terminated()
 	printf("Expected return value: %zu\n", ret_str);
 	printf("Actual return value: %zu\n", ret_ft);
 	printf("Expected destination string: source\n");
-	printf("Actual destination string: %s\n", dst);
+	printf("Actual destination string: %s\n\n", dst);
 }
 
 void	ft_strlcpy_test()
 {
+	dstsize_0();
 	dst_size_0();
 	dst_size_1();
 	dst_bigger_than_src();

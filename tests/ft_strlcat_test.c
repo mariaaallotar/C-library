@@ -11,7 +11,7 @@ static void dstsize_zero()
     printf("Expected return value: %zu\n", ret_str);
     printf("Actual return value: %zu\n", ret_ft);
     printf("Expected destination string: initial\n");
-    printf("Actual destination string: %s\n", dst);
+    printf("Actual destination string: %s\n\n", dst);
 }
 
 static void dstsize_one()
@@ -24,7 +24,7 @@ static void dstsize_one()
     printf("Expected return value: %zu\n", ret_str);
     printf("Actual return value: %zu\n", ret_ft);
     printf("Expected destination string: i\n");
-    printf("Actual destination string: %s\n", dst);
+    printf("Actual destination string: %s\n\n", dst);
 }
 
 static void dstsize_larger()
@@ -37,7 +37,7 @@ static void dstsize_larger()
     printf("Expected return value: %zu\n", ret_str);
     printf("Actual return value: %zu\n", ret_ft);
     printf("Expected destination string: initialsource\n");
-    printf("Actual destination string: %s\n", dst);
+    printf("Actual destination string: %s\n\n", dst);
 }
 
 static void dstsize_smaller()
@@ -50,7 +50,7 @@ static void dstsize_smaller()
     printf("Expected return value: %zu\n", ret_str);
     printf("Actual return value: %zu\n", ret_ft);
     printf("Expected destination string: init\n");
-    printf("Actual destination string: %s\n", dst);
+    printf("Actual destination string: %s\n\n", dst);
 }
 
 static void src_not_null_terminated()
@@ -63,7 +63,7 @@ static void src_not_null_terminated()
     printf("Expected return value: %zu\n", ret_str);
     printf("Actual return value: %zu\n", ret_ft);
     printf("Expected destination string: initialsource\n");
-    printf("Actual destination string: %s\n", dst);
+    printf("Actual destination string: %s\n\n", dst);
 }
 
 void	ft_strlcat_test()
