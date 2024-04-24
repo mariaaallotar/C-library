@@ -14,7 +14,8 @@ SRCS = tests/tests.c \
 		ft_strlen.c \
 		ft_memcpy.c \
 		ft_memmove.c tests/ft_memmove_test.c \
-		ft_strlcpy.c tests/ft_strlcpy_test.c
+		ft_strlcpy.c tests/ft_strlcpy_test.c \
+		ft_strlcat.c tests/ft_strlcat_test.c
 
 CC = cc -g -o testprog
 

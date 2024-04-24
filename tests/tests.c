@@ -213,6 +213,7 @@ int	main()
 	ft_memcpy_test();
 	ft_memmove_test();
 	ft_strlcpy_test();
+	ft_strlcat_test();
 	printf("All tests done.\n");
 	return (0);
 }

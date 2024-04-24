@@ -1,7 +1,7 @@
 
 #include "tests.h"
 
-void	dst_size_0()
+static void	dst_size_0()
 {
 	char dst[10] = "initial";
 	const char *src = "source";
@@ -14,7 +14,7 @@ void	dst_size_0()
 	printf("Actual destination string: %s\n", dst);
 }
 
-void	dst_size_1()
+static void	dst_size_1()
 {
 	char dst[10] = "initial";
 	const char *src = "source";
@@ -27,7 +27,7 @@ void	dst_size_1()
 	printf("Actual destination string: %s\n", dst);
 }
 
-void	dst_bigger_than_src()
+static void	dst_bigger_than_src()
 {
 	char dst[10] = "initial";
 	const char *src = "source";
@@ -40,7 +40,7 @@ void	dst_bigger_than_src()
 	printf("Actual destination string: %s\n", dst);
 }
 
-void	dst_smaller_than_src()
+static void	dst_smaller_than_src()
 {
 	char dst[5] = "init";
 	const char *src = "source";
@@ -53,7 +53,7 @@ void	dst_smaller_than_src()
 	printf("Actual destination string: %s\n", dst);
 }
 
-void	src_not_null_terminated()
+static void	src_not_null_terminated()
 {
 	char dst[10] = "initial";
 	const char src[6] = {'s', 'o', 'u', 'r', 'c', 'e'};
