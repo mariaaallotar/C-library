@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 /**
 * Converts an upper-case letter to the corresponding lower-case letter
