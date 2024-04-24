@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 /**
 * Appends (concatenate) string src to the end of dst
@@ -44,5 +44,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		}
 		dst[i + dst_len] = '\0';
 	}
+	if (dst_len >= dstsize)
+		dst_len = dstsize;
 	return (dst_len + src_len);
 }
