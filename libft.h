@@ -33,10 +33,6 @@ size_t	ft_strlen(const char *s);
 char	*ft_strrchr(const char *s, int c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
-
-
-
-int	ft_isupper(int c);
-size_t	ft_strlen(const char *s);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
