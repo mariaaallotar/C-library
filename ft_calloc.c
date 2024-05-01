@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//check overflow of count * size of size_t
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
