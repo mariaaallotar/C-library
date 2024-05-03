@@ -25,6 +25,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
+
 	if (count != 0 && size > SIZE_MAX / count)
 		return (NULL);
 	mem = malloc (count * size);
