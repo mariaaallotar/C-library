@@ -19,6 +19,8 @@
 *	*str - string of numbers to convert to int
 * Returns:
 *	The number in int representation
+*	0 if conversion was not possible (e.g. no number present in initial portion
+*		or number too big for int)
 */
 int	ft_atoi(const char *str)
 {
@@ -39,10 +41,10 @@ int	ft_atoi(const char *str)
 	while (*str >= '0' && *str <= '9')
 	{
 		num = num * 10 + (*str - '0');
-		if (num * sign >= INT_MAX)
-			return (INT_MAX);
-		if (num * sign <= INT_MIN)
-			return (INT_MIN);
+		if (num * sign > INT_MAX)
+			return (0);
+		if (num * sign < INT_MIN)
+			return (0);
 		str++;
 	}
 	return (sign * num);
