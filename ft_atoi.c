@@ -21,6 +21,9 @@
 *	The number in int representation
 *	0 if conversion was not possible (e.g. no number present in initial portion
 *		or number too big for int)
+* Note:
+*	When 0 is returned, it is not clear if it is the RESULT of the conversion
+*		(*str == "0") or ERROR in the conversion
 */
 int	ft_atoi(const char *str)
 {
