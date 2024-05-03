@@ -62,6 +62,17 @@ static int	sub_length(char const *s, char c)
 	return (len);
 }
 
+static void	*free_everything(char **mem, int i)
+{
+	while (i >= 0)
+	{
+		free(mem[i]);
+		i--;
+	}
+	free(mem);
+	return (NULL);
+}
+
 /**
 * Allocates and returns an array of strings obtained by splitting 's' using
 *	the character 'c' as a delimiter. The array must end with a NULL pointer
@@ -74,13 +85,11 @@ static int	sub_length(char const *s, char c)
 */
 char	**ft_split(char const *s, char c)
 {
-	size_t		sub_count;
 	char		**strings;
 	int			sub_len;
 	int			i;
 
-	sub_count = count_substrings(s, c);
-	strings = (char **) malloc((sub_count + 1) * sizeof(char *));
+	strings = (char **) malloc((count_substrings(s, c) + 1) * sizeof(char *));
 	if (strings == NULL)
 		return (NULL);
 	i = 0;
@@ -93,6 +102,8 @@ char	**ft_split(char const *s, char c)
 		}
 		sub_len = sub_length(s, c);
 		strings[i] = ft_substr(s, 0, sub_len);
+		if (strings[i] == NULL)
+			return (free_everything(strings, i));
 		s = s + sub_len;
 		i++;
 	}

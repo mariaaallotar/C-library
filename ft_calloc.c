@@ -21,6 +21,7 @@
 *	size - size in bytes of each memoryspace
 * Returns:
 *	a pointer to the allocated memoryspace
+*	NULL if allocation failed
 */
 void	*ft_calloc(size_t count, size_t size)
 {
