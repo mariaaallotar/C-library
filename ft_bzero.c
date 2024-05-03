@@ -15,8 +15,10 @@
 /**
 * Writes n zeroed bytes ('\0') to the string s
 * Parameters: 
-	*s - string to write zeroed bytes to
-	n - amount of bytes to write
+*	*s - string to write zeroed bytes to
+*	n - amount of bytes to write
+* Note:
+*	Bevaior undefined if n is bigger than size of s
 */
 void	ft_bzero(void *s, size_t n)
 {
