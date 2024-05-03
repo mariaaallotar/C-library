@@ -89,7 +89,7 @@ char	**ft_split(char const *s, char c)
 		if (*s == c)
 		{
 			s++;
-			continue;
+			continue ;
 		}
 		sub_len = sub_length(s, c);
 		strings[i] = ft_substr(s, 0, sub_len);
