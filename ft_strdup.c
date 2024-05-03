@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+* Allocates sufficient memory for a copy of the string s1, does the copy,
+*	and returns a pointer to it.  The pointer may subsequently be used as an
+*	argument to the function free
+* Parametes:
+*	*s1 - string to duplicate
+* Returns:
+*	Pointer to the duplicated string
+*/
 char	*ft_strdup(const char *s1)
 {
 	size_t	len;

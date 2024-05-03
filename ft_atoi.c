@@ -11,8 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
 
+/**
+* Converts the initial portion of the string pointed to by str to
+*	int representation.
+* Parameters:
+*	*str - string of numbers to convert to int
+* Returns:
+*	The number in int representation
+*/
 int	ft_atoi(const char *str)
 {
 	int		sign;
