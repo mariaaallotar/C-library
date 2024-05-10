@@ -16,7 +16,7 @@
 * Writes n zeroed bytes ('\0') to the string s
 * Parameters: 
 *	*s - string to write zeroed bytes to
-*	n - amount of bytes to write
+*	n - amount of bytes to write (must be non-negaitve value)
 * Note:
 *	Bevaior undefined if n is bigger than size of s
 */
