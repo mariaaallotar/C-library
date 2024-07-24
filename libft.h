@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 12:52:38 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/24 12:52:40 by maheleni         ###   ########.fr       */
+/*   Updated: 2024/07/24 10:27:39 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include <stdarg.h>
+# include "get_next_line.h"
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
@@ -53,5 +55,12 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+int		ft_printf(const char *str, ...);
+int		print_char(va_list list);
+int		print_string(va_list list);
+int		print_pointer(va_list list);
+int		print_num(va_list list);
+int		print_unsigned(va_list list);
+int		print_hex(va_list list, char type);
 
 #endif

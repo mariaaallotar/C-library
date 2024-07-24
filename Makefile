@@ -6,7 +6,7 @@
 #    By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/21 10:42:28 by maheleni          #+#    #+#              #
-#    Updated: 2024/04/21 10:42:33 by maheleni         ###   ########.fr        #
+#    Updated: 2024/07/24 10:10:50 by maheleni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,13 @@ SRCS = ft_isalnum.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c \
+		ft_printf.c \
+		print_chars.c \
+		print_hex.c \
+		print_num.c \
+		get_next_line.c \
+		get_next_line_utils.c
 
 OBJS = $(SRCS:.c=.o)
 
