@@ -6,7 +6,7 @@
 #    By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/21 10:42:28 by maheleni          #+#    #+#              #
-#    Updated: 2024/07/24 10:10:50 by maheleni         ###   ########.fr        #
+#    Updated: 2024/07/25 09:59:48 by maheleni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,11 +53,12 @@ SRCS = ft_isalnum.c \
 		print_hex.c \
 		print_num.c \
 		get_next_line.c \
-		get_next_line_utils.c
+		get_next_line_utils.c \
+		ft_count_words.c
 
 OBJS = $(SRCS:.c=.o)
 
-CC = cc
+CC = cc -g
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -rf
 
