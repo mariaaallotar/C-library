@@ -9,6 +9,10 @@ Libft is there first project of the 42 curriculum. In this project you write you
 - string manipulation
 - string-to-number and number-to-string
 
+## Allowed external functions
+
+- malloc, free, write (limited to specific ft_* functions)
+
 ## Technologies Used
 
 - `C`, `Makefile`, `Git`
