@@ -1,6 +1,6 @@
-# libft
+# C-library
 
-Libft is there first project of the 42 curriculum. In this project you write your own versions of standard C functions as well as add other usefull functions. This library is used in several later projects in the curriculum. 
+In this project I wrote my own versions of standard C functions as well as add other usefull functions. This project is part of the 42 curriculum and is used in several later projects in the curriculum.
 
 ## Functions
 
