@@ -2,6 +2,8 @@
 
 In this project I wrote my own versions of standard C functions as well as add other usefull functions. This project is part of the 42 curriculum and is used in several later projects in the curriculum.
 
+ft_ stands for *f*orty*t*wo
+
 ## Functions
 
 - memory management
