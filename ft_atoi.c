@@ -6,19 +6,16 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 09:46:21 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 09:46:22 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:03:55 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * Converts the initial portion of the string pointed to by str to
 *	int representation.
-* Parameters:
-*	*str - string of numbers to convert to int
-* Returns:
-*	The number in int representation
-* Note:
-*	When INT overflows or underflows the function keeps returning numbers, 
+* @param str string of numbers to convert to int
+* @returns The number in int representation
+* @note When INT overflows or underflows the function keeps returning numbers, 
 *		when LONG overflows the function returns -1 and when LONG underflows
 *		the function returns 0
 */

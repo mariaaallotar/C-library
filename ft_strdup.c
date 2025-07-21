@@ -6,20 +6,18 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 09:38:06 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 09:38:08 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:03:05 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
-* Allocates sufficient memory for a copy of the string s1, does the copy,
-*	and returns a pointer to it.  The pointer may subsequently be used as an
-*	argument to the function free
-* Parametes:
-*	*s1 - string to duplicate
-* Returns:
-*	Pointer to the duplicated string
+* Allocates sufficient memory for a copy of the string s1, does the copy, and
+* returns a pointer to it.  The pointer may subsequently be used as an argument
+* to the function free
+* @param s1 string to duplicate
+* @returns Pointer to the duplicated string, NULL if allocation fails
 */
 char	*ft_strdup(const char *s1)
 {

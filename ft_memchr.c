@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:24:54 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/25 11:25:10 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:43:12 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 /**
 * Locates the first occurrence of c (converted to an unsigned char) in s.
 * Continues searching even after '\0' if there is still n left.
-* Parameters:
-*	*s - pointer to memory to search from
-*	c - int representation of character to find
-*	n - amount of memorylocations to search
-* Returns:
-*	Location (void pinter) of first occurrance where c was found
-*	NULL if c was NOT found anywhere
+* @param s pointer to memory to search from
+* @param c int representation of character to find
+* @param n amount of memorylocations to search
+* @returns Location (void pinter) of first occurrance where c was found. NULL
+* if c was NOT found anywhere
 */
 void	*ft_memchr(const void *s, int c, size_t n)
 {

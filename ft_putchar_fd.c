@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:05:21 by maheleni          #+#    #+#             */
-/*   Updated: 2024/05/03 10:05:23 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:56:22 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 /**
 * Outputs the character ’c’ to the given file descriptor
-* Parameters:
-*	c - character to output
-*	fd - filedescriptor of where to output
+* @param c character to output
+* @param fd filedescriptor of where to output
 */
 void	ft_putchar_fd(char c, int fd)
 {

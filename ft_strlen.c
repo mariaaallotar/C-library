@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:06:07 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/22 13:06:09 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:17:08 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 /**
 * Computes the length of the string s
-* Parameters: 
-	*s - string to get length of
-* Returns: 
-	The length of the string (amount of character before '\0' character)
+* @param s string to get length of
+* @returns The length of the string (amount of character before '\0' character)
 */
 size_t	ft_strlen(const char *s)
 {

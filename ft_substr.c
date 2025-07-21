@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 10:31:57 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 10:31:59 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:32:01 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 /**
 * Allocates and returns a substring from the string 's'
-* Parameters:
-*	*s - string to create substring from
-*	start - start index of the substring in the string 's'
-*	len - maximum length of the substring (NOT including '\0')
-* Returns:
-*	The substring
-*	NULL if allocation fails or 's' is NULL
+* @param s string to create substring from
+* @param start start index of the substring in the string 's'
+* @param len maximum length of the substring (NOT including '\0')
+* @returns The substring, NULL if allocation fails or 's' is NULL
 */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

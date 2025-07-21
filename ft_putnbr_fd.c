@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:08:46 by maheleni          #+#    #+#             */
-/*   Updated: 2024/05/03 10:08:47 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:57:30 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 /**
 * Outputs the integer ’n’ to the given file descriptor
-* Parameters:
-*	n - number to output
-*	fd - filedescriptor on which to write
+* @param n number to output
+* @param fd filedescriptor on which to write
 */
 void	ft_putnbr_fd(int n, int fd)
 {

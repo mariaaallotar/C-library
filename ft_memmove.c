@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 09:02:05 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/23 09:02:07 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:48:44 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 /**
 * Copies n bytes from memory area src to memory area dst
 * Works even if src and dst overlap (the function is bidirectional).
-* Parameters: 
-	*dst - the destination to copy bytes to
-	*src - the source to copy from
-	n - amount of bytes to cpy
-* Returns: 
-	The destination
+* @param dst the destination to copy bytes to
+* @param src the source to copy from
+* @param n amount of bytes to cpy
+* @returns The destination
 */
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

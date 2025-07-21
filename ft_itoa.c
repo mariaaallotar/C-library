@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 15:58:42 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 15:58:44 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 11:16:33 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 /**
 * Counts how many digits are in the number n
-* Parameters:
-*	n - number to count digits of
+* @param n number to count digits of
 */
 static int	count_digits(long n)
 {
@@ -34,10 +33,9 @@ static int	count_digits(long n)
 
 /**
 * Converts an integer to ascii into the string given
-* Parameters:
-*	num - number to convert
-*	*str - string to put the number into
-*	i - last index of string
+* @param num number to convert
+* @param str string to put the number into
+* @param i last index of string
 */
 static void	convert_integer(long num, char *str, int i)
 {
@@ -51,10 +49,8 @@ static void	convert_integer(long num, char *str, int i)
 /**
 * Allocates and returns a string representing the integer received as an
 * argument
-* Parameters:
-*	n - int number
-* Returns:
-*	A string of that number
+* @param n int number
+* @returns A string of that number
 */
 char	*ft_itoa(int n)
 {

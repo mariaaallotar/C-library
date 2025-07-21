@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 14:09:33 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 14:09:47 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:00:16 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 /**
 * Counts the amount of substrings in the string 's'
-* Parameters:
-*	*s - string the substrings are located in
-*	c - delimiter character
-* Returns:
-*	How many substrings are in the substring
+* @param s string the substrings are located in
+* @param c delimiter character
+* @returns How many substrings are in the substring
 */
 static int	count_substrings(const char *s, char c)
 {
@@ -43,11 +41,9 @@ static int	count_substrings(const char *s, char c)
 
 /**
 * Counts the length of a substring
-* Parameters:
-*	*s - string the substring is located in
-*	c - delimiter character
-* Returns:
-*	How many characters is in the substring
+* @param s string the substring is located in
+* @param c delimiter character
+* @returns How many characters is in the substring
 */
 static int	sub_length(char const *s, char c)
 {
@@ -75,13 +71,11 @@ static void	*free_everything(char **mem, int i)
 
 /**
 * Allocates and returns an array of strings obtained by splitting 's' using
-*	the character 'c' as a delimiter. The array must end with a NULL pointer
-* Parameters:
-*	*s - string to be split
-*	c - delimiter character
-* Returns:
-*	Array of new strings resulting from the split
-*	NULL if the allocation fails
+* the character 'c' as a delimiter. The array must end with a NULL pointer
+* @param s string to be split
+* @param c delimiter character
+* @returns Array of new strings resulting from the split. NULL if the
+* allocation fails
 */
 char	**ft_split(char const *s, char c)
 {

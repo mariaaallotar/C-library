@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 11:35:51 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 11:35:53 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:14:15 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 /**
 * Allocates and returns a new string, which is the result of the concatenation
-*	of 's1' and 's2'
-* Parameters:
-*	*s1 - the prefix string
-*	*s2 - the suffix string
-* Returns:
-*	The string
-*	NULL if allocation failed
+* of 's1' and 's2'
+* @param s1 the prefix string
+* @param s2 the suffix string
+* @returns The string, NULL if allocation failed
 */
 char	*ft_strjoin(char const *s1, char const *s2)
 {

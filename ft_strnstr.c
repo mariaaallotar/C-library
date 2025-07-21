@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 09:39:33 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 09:39:35 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:23:46 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 /**
 * Checks if the null-terminated string needle is found in the len first
-*	characters of the string haystack
-* Parameters:
-*	*haystack - string to search from
-*	*needle - string to find in haystack
-*	len - amount of characters to search from (at most)
-* Returns:
-*	1 - needle found
-*	0 - needle NOT found
+* characters of the string haystack
+* @param haystack string to search from
+* @param needle string to find in haystack
+* @param len amount of characters to search from (at most)
+* @return 1 needle found, 0 needle NOT found
 */
 static int	needle_found(const char *haystack, const char *needle, size_t len)
 {
@@ -42,15 +39,14 @@ static int	needle_found(const char *haystack, const char *needle, size_t len)
 
 /**
 * Locates the first occurrence of the null-terminated string needle in the
-*	string haystack, where not more than len characters are searched
-* Parameters:
-*	*haystack - string to search from
-*	*needle - string to find in haystack
-*	len - amount of characters to search from (at most)
-* Returns:
-*	*haystack - needle is an empty string
-*	NULL - needle occurs nowhere in haystack
-*	pointer to the first character of the first occurrence of needle
+* string haystack, where not more than len characters are searched
+* @param haystack string to search from
+* @param needle string to find in haystack
+* @param len amount of characters to search from (at most)
+* @retval haystack: when needle is an empty string
+* @retval NULL: needle occurs nowhere in haystack
+* @retval pointer to the first character of the first occurrence of needle
+* in haystack
 */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

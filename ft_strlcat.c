@@ -6,25 +6,22 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 10:16:11 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/24 10:16:13 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:15:44 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
-* Appends (concatenate) string src to the end of dst
-*	It will append at most dstsize - strlen(dst) - 1 characters.  
-*	It will then NUL-terminate, unless dstsize is 0 or the original dst string
-*	was longer than dstsize
-* If the src and dst strings overlap, the behavior is undefined.
-* Parameters:
-*	*dst - the destination to append to
-*	*src - the source to copy from
-*	dstsize - the size of dst memory
-* Returns:
-*	The size of the string it tried to create, in practice the initial length
-*		of dst plus the length of src
+* Appends (concatenate) string src to the end of dst. It will append at most
+* dstsize - strlen(dst) - 1 characters. It will then NUL-terminate, unless
+* dstsize is 0 or the original dst string was longer than dstsize. If the src
+* and dst strings overlap, the behavior is undefined.
+* @param dst the destination to append to
+* @param src the source to copy from
+* @param dstsize the size of dst memory
+* @returns The size of the string it tried to create, in practice the initial
+* length of dst plus the length of src
 */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

@@ -6,15 +6,14 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:10:38 by maheleni          #+#    #+#             */
-/*   Updated: 2024/05/03 10:10:39 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:11:47 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * Applies the function ’f’ to each character of the string ’s’
-* Parameters:
-*	*s - string to apply f to
-*	f - a function to apply to every character in string s
+* @param s string to apply f to
+* @param f a function to apply to every character in string s.
 *		Parameters:
 *			unsigned int - index of the character in s
 *			char * - address of that character

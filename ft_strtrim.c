@@ -6,7 +6,7 @@
 /*   By: maheleni <maheleni@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 12:47:11 by maheleni          #+#    #+#             */
-/*   Updated: 2024/04/30 12:47:13 by maheleni         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:31:01 by maheleni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 /**
 * Allocates and returns a copy of string 's' with the characters specified in
 * 'set' removed from the beginning and the end of the string
-* Example:					Example:
+* @param s string to be trimmed
+* @param set a set of characters to trim from 's'
+* @returns The trimmed string, NULL if the allocation fails
+*
+* @example					@example
 *	string - cbahahab			string - cbahah
 *	set - abc					set - abc
 *	returns: hah				returns: hah
-* Parameters:
-*	*s - string to be trimmed
-*	*set - a set of characters to trim from 's'
-* Returns;
-*	The trimmed string
-*	NULL if the allocation fails
 */
 char	*ft_strtrim(char const *s, char const *set)
 {
